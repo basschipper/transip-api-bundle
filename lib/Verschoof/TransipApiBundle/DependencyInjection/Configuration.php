@@ -28,6 +28,10 @@ class Configuration implements ConfigurationInterface
                 ->booleanNode('read_only')
                     ->isRequired()
                 ->end()
+                ->scalarNode('proxy_host')
+                ->end()
+                ->scalarNode('proxy_port')
+                ->end()
             ->end()
         ;
 
